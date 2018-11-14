@@ -76,8 +76,8 @@ class Posts extends CI_Controller{
             }
             $this->post_model->create_post($post_image);
             
-             //Set message
-             $this->session->set_flashdata('post_created','Your post has been created and now can be seen on Blog page');
+            //Set message
+            $this->session->set_flashdata('post_created','Your post has been created and now can be seen on Blog page');
 
             redirect('posts');
         }
@@ -128,8 +128,8 @@ class Posts extends CI_Controller{
         }
         $this->post_model->update_post();
 
-         //Set message
-         $this->session->set_flashdata('post_updated','Your post has been updated!');
+        //Set message
+        $this->session->set_flashdata('post_updated','Your post has been updated!');
 
         redirect('posts');
     }

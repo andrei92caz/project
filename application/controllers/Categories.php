@@ -28,8 +28,8 @@ class Categories extends CI_Controller{
         else{
             $this->category_model->create_category();
 
-             //Set message
-             $this->session->set_flashdata('category_created','Category created!');
+            //Set message
+            $this->session->set_flashdata('category_created','Category created!');
 
             redirect('categories');
         }
